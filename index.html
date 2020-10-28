@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Spectre CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Cookie clicker</title>
+
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="navbar">
+      <section class="navbar-section">
+        <span class="navbar-brand mr-2">Cookie clicker</span>
+      </section>
+      <section class="navbar-section">
+        <div class="input-group input-inline">
+          <i class="icon icon-plus"></i>
+        </div>
+      </section>
+    </header>
+
+    <div class="columns mt-2" id="tabcookie">
+      <div class="column col-4"></div>
+      <div class="column col-4"></div>
+      <div class="column col-4"></div>
+      <div class="column col-4"></div>
+      <div class="column col-4"><img id="cookie" src="images/PerfectCookie.png" class="img-responsive" alt="cookie">
+      </div>
+      <div class="column col-4"></div>
+      <div class="column col-4"></div>
+      <div class="column col-4"></div>
+      <div class="column col-4"></div>
+    </div>
+
+    <div class="columns mt-2">
+      <div class="column col-12">
+        <button>start</button>
+      </div>
+    </div>
+
+    <div id="state" class="columns mt-2 d-none">
+      <div class="column col-6">
+        <span id="score">0</span>
+      </div>
+      <div class="column col-6">
+        <span id="time">15</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="tab-score" id="div_tabscore">
+      <table class="table">
+        <thead>
+          <tr class="text-secondary">
+            <br>
+            <div class="text-center" id="Titretab" style="color:black">Tableau des scores</label>
+            <th>Score</th>
+            <th>Pseudo</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-settings">
+    <a id="" href="#close" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container">
+      <div class="modal-header">
+        <a id="close-modal-settings" href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+        <div class="modal-title h5">Settings</div>
+      </div>
+      <div class="modal-body">
+        <div class="content">
+          <div class="form-group">
+            <label class="form-label">Background</label>
+            <input class="form-input" type="color">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Difficulty</label>
+            <label class="form-radio">
+              <input type="radio" name="level" value="3" checked>
+              <i class="form-icon"></i> easy
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="level" value="2">
+              <i class="form-icon"></i> medium
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="level" value="1">
+              <i class="form-icon"></i> hard
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-share">
+    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container">
+      <div class="modal-header">
+        <a id="close-modal-share" href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+        <div class="modal-title h5">Game over</div>
+      </div>
+      <div class="modal-body">
+        <div class="content">
+          <p>
+            <img src="images/GrandmaIconLarge.png" alt="Grandma">
+            <span id="click-count"></span> clicks in 15 seconds, not that bad kid!
+          </p>
+          <form id="subnick" method="GET">
+            Nickname: 
+            <input name="nickname" type="text" placeholder="Text here" style="margin-bottom: 10px">
+            <div class="col-4 col-mx-auto"><input type="submit" class="btn btn-primary" value="Send Nickname"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

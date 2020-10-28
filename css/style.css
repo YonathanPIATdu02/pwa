@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Kavoon);
+
+body {
+  background-image: url("../images/bgBlue.jpg");
+  background-repeat: repeat;
+  font-family: Kavoon;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 320px;
+  margin: auto;
+  touch-action: none;
+}
+
+header {
+  padding: 12px;
+  background: black;
+  color: white;
+}
+
+.col-4 {
+  min-height: 90px;
+  z-index: 1;
+}
+
+span#score {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 21px;
+  background-color: #f4d03f;
+  box-shadow: 4px 4px 4px black;
+  padding: 6px 12px;
+}
+
+span#time {
+  text-align: center;
+  font-size: 2rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  font-family: Kavoon;
+  font-size: 24px;
+  background-color: white;
+  padding: 9px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+[alt="Grandma"] {
+  display: block;
+}
